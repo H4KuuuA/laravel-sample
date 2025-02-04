@@ -12,6 +12,6 @@
     Route::get('/posts/{id}', [PostController::class, 'show'])->name('posts.show');
     Route::get('/comments', [CommentController::class, 'index'])->name('comments.index');
 
-Auth::routes();
+    Auth::routes();
 
-Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+    Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
