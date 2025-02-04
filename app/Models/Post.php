@@ -10,4 +10,8 @@
         {
             return $this->hasMany(Comment::class);
         }
+        protected $fillable = [
+            'name',
+            'contents'
+        ];
     }
